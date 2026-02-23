@@ -1,0 +1,14 @@
+version: 2
+updates:
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: weekly
+    open-pull-requests-limit: 5
+    groups:
+      next:
+        patterns: ["next", "next-*", "@next/*"]
+      supabase:
+        patterns: ["@supabase/*"]
+      dev-deps:
+        dependency-type: development
